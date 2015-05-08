@@ -10,4 +10,5 @@ RUN apt-get update && apt-get install curl unzip -y && \
 
 CMD [ "java", "-jar", "jetty-runner.jar", "app" ]
 
-ONBUILD COPY config.properties /opt/turbine/app/WEB-INF/classes/config.properties
+
+ONBUILD COPY resources/config.properties /opt/turbine/app/WEB-INF/classes/config.properties
