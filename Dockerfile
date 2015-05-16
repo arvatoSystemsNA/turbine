@@ -1,4 +1,4 @@
-FROM nexus49/java8:wheezy
+FROM asna/java8:wheezy
 
 WORKDIR /opt/turbine
 
